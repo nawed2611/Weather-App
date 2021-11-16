@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1036%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c464.404C87.053%2c462.512%2c158.016%2c404.719%2c238.042%2c370.4C336.504%2c328.175%2c481.703%2c337.744%2c524.437%2c239.502C567.388%2c140.762%2c437.718%2c45.795%2c425.791%2c-61.219C413.231%2c-173.911%2c514.023%2c-297.17%2c453.906%2c-393.312C395.211%2c-487.179%2c258.943%2c-501.68%2c148.286%2c-505.015C51.385%2c-507.935%2c-30.195%2c-445.705%2c-120.57%2c-410.625C-202.082%2c-378.985%2c-300.901%2c-376.398%2c-356.635%2c-309.026C-412.109%2c-241.968%2c-385.163%2c-142.142%2c-411.337%2c-59.141C-444.498%2c46.019%2c-569.511%2c139.136%2c-530.478%2c242.261C-492.233%2c343.304%2c-344.438%2c339.161%2c-244.784%2c380.892C-163.618%2c414.881%2c-87.974%2c466.316%2c0%2c464.404' fill='%23091b2e'%3e%3c/path%3e%3cpath d='M1440 992.171C1521.373 1008.48 1615.256 982.976 1674.443 924.8 1731.95 868.275 1716.665 774.222 1740.203 697.098 1759.949 632.398 1811.35 574.95 1801.649 508.003 1791.951 441.074 1725.335 401.26300000000003 1689.063 344.185 1644.689 274.358 1645.217 154.36399999999998 1564.734 135.19600000000003 1482.717 115.66300000000001 1425.206 220.42399999999998 1353.14 264.183 1302.182 295.125 1253.029 322.124 1203.138 354.75800000000004 1132.161 401.185 1032.73 419.06100000000004 998.0419999999999 496.456 962.701 575.307 974.389 679.9159999999999 1026.5149999999999 748.832 1077.896 816.7629999999999 1185.655 798.347 1259.061 841.547 1328.092 882.172 1361.464 976.4300000000001 1440 992.171' fill='%23133960'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1036'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");    font-size: 120%;
+  }
+  @keyframes slide{
+    0%{transform:translateY(-100px)}100%{transform:translateY(0px)}
+  }
+
+  @keyframes scale-in-ver-center{0%{transform:scaleY(0);opacity:0.3}100%{transform:scaleY(1);opacity:1}}
+
+  .card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    animation:scale-in-ver-center .6s cubic-bezier(.25,.46,.45,.94) both;
+  }
+  
+  .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  button{
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #dad0d060;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: 75%;
+  }
+  
+  button:hover {
+    background: #7c7c7c6b;
+  }
+  
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+    font-size: 3rem;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0 ;
+  }
+  
+  .description, .wind, .speed {
+    text-transform: capitalize;
+    margin: 0.5rem 0 ;
+  }
