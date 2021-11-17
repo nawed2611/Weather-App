@@ -1,6 +1,6 @@
 # Weather-News
 
-![](
+![screenshot](image.png)
 
 
 Weather-News is a website that tells you Weather of any location fetching through openweather.org API. It also provides you with local time in your location using JavaScript.
