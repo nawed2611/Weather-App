@@ -3,7 +3,7 @@
 ![screenshot](image.png)
 
 
-Weather-News is a website that tells you Weather of any location fetching through [Open Weather API](https://openweathermap.org/api). It also provides you with local time in your location using JavaScript.
+Weather-News tells you Weather of any location fetching through [Open Weather API](https://openweathermap.org/api). It also provides you with local time in your location using JavaScript.
 
 ## Tech-Stack
 
